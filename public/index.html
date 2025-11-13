@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AI Code Reviewer Debugger Ollama</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="codemirror.min.css">
+  <script src="codemirror.min.js"></script>
+  <script src="javascript.min.js"></script>
+  <script src="python.min.js"></script>
+  <script src="clike.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Code Reviewer Debugger Ollama</h1>
+    <div class="controls">
+      <label for="provider">Provider</label>
+      <select id="provider">
+        <option value="ollama">Local Ollama</option>
+        <option value="openai">OpenAI</option>
+      </select>
+      <label for="language">Language</label>
+      <select id="language">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+      </select>
+      <label for="mode">Mode</label>
+      <select id="mode">
+        <option value="review">Review</option>
+        <option value="debug">Debug</option>
+      </select>
+      <button id="analyzeBtn">Analyze</button>
+    </div>
+    <div class="editor-row">
+      <textarea id="code">// Paste your code here...</textarea>
+      <div id="result" class="result"></div>
+    </div>
+    <div id="structured" class="structured"></div>
+    <span id="status"></span>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
