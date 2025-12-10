@@ -4,7 +4,7 @@
 A minimal Node.js + Express prototype that sends code to a local Ollama model (default) or to OpenAI (optional).
 Frontend uses CodeMirror for editing. UI supports Review and Debug modes.
 
-## Quick start
+## Quick start.
 1. Install dependencies:
    ```bash
    npm install
